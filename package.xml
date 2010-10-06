@@ -4,10 +4,9 @@
 		<packagename><![CDATA[Unpopular user]]></packagename>
 		<packagename language="de"><![CDATA[Unbeliebte Benutzer]]></packagename>
 		<packagename language="de-informal"><![CDATA[Unbeliebte Benutzer]]></packagename>
-		<packagename language="da">WBB Portal</packagename>
 		<packagedescription><![CDATA[The package punishes unpopular users with random "errors".]]></packagedescription>
-		<packagedescription language="de"><![CDATA[Das Paket beschehrt "unbeliebten Nutzern" zufällig ausgewählte Fehler.]]></packagedescription>
-		<packagedescription language="de-informal"><![CDATA[Das Paket beschehrt "unbeliebten Nutzern" zufällig ausgewählte Fehler.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Das Paket beschert "unbeliebten Nutzern" zufällig ausgewählte Fehler.]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Das Paket beschert "unbeliebten Nutzern" zufällig ausgewählte Fehler.]]></packagedescription>
 		<standalone>0</standalone>
 		<isunique>1</isunique>
 		<version>1.0.0 Beta 1</version> <!-- Codename "THE UGLY" -->
