@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @package timwolla.wcf.annoy
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
-class NoGuestListener implements EventListener {
+class AnnoyUserListener implements EventListener {
 	public static $whatDo = array('slow', 'blank', 'redirect');
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoy) return;
