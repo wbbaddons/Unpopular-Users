@@ -12,7 +12,7 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
 class AnnoyUserListener implements EventListener {
 	public static $whatDo = array('slow', 'blank', 'redirect');
 	public function execute($eventObj, $className, $eventName) {
-		if (!WCF::getUser()->annoy) return;
+		if (!WCF::getUser()->annoyThisUser) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
 	}
