@@ -26,7 +26,10 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function redirect() {
-		if (MathUtil::getRandomValue(0, 99) < ANNOY_REDIRECT_PERCENTAGE) HeaderUtil::redirect('index.php');
+		if (MathUtil::getRandomValue(0, 99) < ANNOY_REDIRECT_PERCENTAGE) {
+			HeaderUtil::redirect('index.php');
+			exit;
+		}
 	}
 }
 ?>
