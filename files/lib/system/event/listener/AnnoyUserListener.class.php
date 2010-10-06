@@ -10,7 +10,7 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class NoGuestListener implements EventListener {
-	public static $whatDo = array('slow', 'blank');
+	public static $whatDo = array('slow', 'blank', 'redirect');
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoy) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
@@ -22,7 +22,11 @@ class NoGuestListener implements EventListener {
 	}
 
 	protected function blank() {
-		exit;
+		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) exit;
+	}
+
+	protected function redirect() {
+		if (MathUtil::getRandomValue(0, 99) < ANNOY_REDIRECT_PERCENTAGE) HeaderUtil::redirect('index.php');
 	}
 }
 ?>
