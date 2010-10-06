@@ -1,0 +1,1 @@
+ALTER TABLE wbb1_1_user ADD annoyThisUser tinyint(1) unsigned NOT NULL DEFAULT '0';
