@@ -16,5 +16,13 @@ class NoGuestListener implements EventListener {
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
 	}
+
+	protected function slow() {
+		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
+	}
+
+	protected function blank() {
+		exit;
+	}
 }
 ?>
