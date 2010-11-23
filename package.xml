@@ -30,7 +30,7 @@
 		<eventlistener>eventlistener.xml</eventlistener>
 		<files>files.tar</files>
 		<templates>templates.tar</templates>
-		<groupoptions>groupoptions.tar</groupoptions>
+		<groupoptions>groupoptions.xml</groupoptions>
 		<sql>install.sql</sql>
 		<options>options.xml</options>
 	</instructions>
