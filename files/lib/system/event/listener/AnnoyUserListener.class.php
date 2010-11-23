@@ -10,14 +10,14 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class AnnoyUserListener implements EventListener {
-	public static $whatDo = array('slow', 'blank', 'redirect', 'doNothing', 'logout');
+	public static $whatDo = array('iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 'iLiekTehIndexPage', 'tihzTimeILiekU', 'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut');
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoyThisUser) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
 	}
 
-	protected function logout() {
+	protected function iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut() {
 		if (MathUtil::getRandomValue(0, 99) >= ANNOY_LOGOUT_PERCENTAGE) return;
 		require_once(WCF_DIR.'lib/system/session/UserSession.class.php');
 		WCF::getSession()->delete();
@@ -30,19 +30,19 @@ class AnnoyUserListener implements EventListener {
 		}
 	}
 
-	protected function doNothing() {
+	protected function tihzTimeILiekU() {
 
 	}
 
-	protected function slow() {
+	protected function iDontKnowVasSupWithTheServerButIThinkItIsVerySlow() {
 		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
 	}
 
-	protected function blank() {
+	protected function noThereIsReallyNoContentGoAwayAndPlaySomewhereElse() {
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) exit;
 	}
 
-	protected function redirect() {
+	protected function iLiekTehIndexPage() {
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_REDIRECT_PERCENTAGE) {
 			HeaderUtil::redirect('index.php');
 			exit;
