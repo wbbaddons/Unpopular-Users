@@ -2,46 +2,48 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/options.xsd">
 	<import>
 		<categories>
-			<category name="annoy">
-				<x />
+			<category name="annoy" />
+			<category name="annoy.general">
+				<parent>annoy</parent>
 			</category>
+			
 		</categories>
 		<options>
 			<option name="annoy_slow_min">
-				<categoryname>annoy</categoryname>
+				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>1</defaultvalue>
 				<showorder>1</showorder>
 			</option>
 			<option name="annoy_slow_max">
-				<categoryname>annoy</categoryname>
+				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>10</defaultvalue>
 				<showorder>2</showorder>
 			</option>
 			<option name="annoy_blank_percentage">
-				<categoryname>annoy</categoryname>
+				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>35</defaultvalue>
 				<showorder>3</showorder>
 			</option>
 			<option name="annoy_logout_percentage">
-				<categoryname>annoy</categoryname>
+				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>15</defaultvalue>
 				<showorder>4</showorder>
 			</option>
 			<option name="annoy_redirect_percentage">
-				<categoryname>annoy</categoryname>
+				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>45</defaultvalue>
 				<showorder>5</showorder>
 			</option>
 			<option name="annoy_gzip_percentage">
-				<categoryname>annoy</categoryname>
+				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>20</defaultvalue>
-				<showorder>5</showorder>
+				<showorder>6</showorder>
 			</option>
 		</options>
 	</import>
