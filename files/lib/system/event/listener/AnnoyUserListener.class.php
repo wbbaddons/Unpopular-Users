@@ -10,11 +10,27 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class AnnoyUserListener implements EventListener {
-	public static $whatDo = array('slow', 'blank', 'redirect');
+	public static $whatDo = array('slow', 'blank', 'redirect', 'doNothing', 'logout');
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoyThisUser) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
+	}
+
+	protected function logout() {
+		require_once(WCF_DIR.'lib/system/session/UserSession.class.php');
+		WCF::getSession()->delete();
+		// remove cookies
+		if (isset($_COOKIE[COOKIE_PREFIX.'userID'])) {
+			HeaderUtil::setCookie('userID', 0);
+		}
+		if (isset($_COOKIE[COOKIE_PREFIX.'password'])) {
+			HeaderUtil::setCookie('password', '');
+		}
+	}
+
+	protected function doNothing() {
+
 	}
 
 	protected function slow() {
