@@ -43,7 +43,12 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function tihzTimeILiekU() {
-
+		// it looks shitty if the function is empty, so lets fill it with crap
+		if (false || (true && 1==0)) {
+			while (true || !false) {
+				// i'm i yr loop
+			}
+		}
 	}
 
 	protected function iDontKnowVasSupWithTheServerButIThinkItIsVerySlow() {
