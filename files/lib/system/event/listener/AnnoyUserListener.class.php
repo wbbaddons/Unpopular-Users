@@ -10,11 +10,23 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class AnnoyUserListener implements EventListener {
-	public static $whatDo = array('iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 'iLiekTehIndexPage', 'tihzTimeILiekU', 'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut');
+	public static $whatDo = array('thizShitDoesNotReallyLookLikeHTMLButItIs', 'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 'iLiekTehIndexPage', 'tihzTimeILiekU', 'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut');
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoyThisUser) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
+	}
+
+	protected function thizShitDoesNotReallyLookLikeHTMLButItIs() {
+		if (MathUtil::getRandomValue(0, 99) >= ANNOY_GZIP_PERCENTAGE) return;
+		if (HTTP_ENABLE_GZIP && HTTP_GZIP_LEVEL > 0 && HTTP_GZIP_LEVEL < 10 && !defined('HTTP_DISABLE_GZIP')) {
+			// break gzip output
+			echo ' ';
+			flush();
+			ob_flush();
+			WCF::getTPL()->display('permissionDenied');
+			exit;
+		}
 	}
 
 	protected function iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut() {
@@ -50,7 +62,7 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function noThereIsReallyNoContentGoAwayAndPlaySomewhereElse() {
-		// burp
+		// burp, the content tasted good.
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) die;
 	}
 
