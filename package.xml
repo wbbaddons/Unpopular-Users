@@ -29,6 +29,7 @@
 		<languages languagecode="en">languages/en.xml</languages>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<files>files.tar</files>
+		<script>acp/install.php</script>
 		<templates>templates.tar</templates>
 		<groupoptions>groupoptions.xml</groupoptions>
 		<sql>install.sql</sql>
