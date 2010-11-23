@@ -35,16 +35,17 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function iDontKnowVasSupWithTheServerButIThinkItIsVerySlow() {
-//		 ______________________________
-//		/ zzZzzzzzZZzzzzZZZZZZzzZZZZzZ \
-//		| zzZzzzzzzZZZzzzzzzZZzzzzzzzZ |
-//		\ ZzZZzzzZZZzzZZzzZZzzzzZZZzzz /
-//		 ------------------------------
-//		        \   ^__^
-//		         \  (--)\_______
-//		            (__)\       )\/\
-//		                ||----w |
-//		                ||     ||
+/*		 ______________________________
+		/ zzZzzzzzZZzzzzZZZZZZzzZZZZzZ \
+		| zzZzzzzzzZZZzzzzzzZZzzzzzzzZ |
+		\ ZzZZzzzZZZzzZZzzZZzzzzZZZzzz /
+		 ------------------------------
+		        \   ^__^
+		         \  (--)\_______
+		            (__)\       )\/\
+		                ||----w |
+		                ||     ||
+*/
 		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
 	}
 
