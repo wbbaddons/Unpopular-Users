@@ -6,6 +6,6 @@
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.admin.user.canAnnoyUser"><![CDATA[Kann Benutzer als "unbeliebt" markieren]]></item>
-		<item name="wcf.acp.group.option.admin.user.canAnnoyUser.description"><![CDATA[Mitglieder dieser Gruppe können einzelne Benutzer als unbeliebt markieren.]]></item>
+		<item name="wcf.acp.group.option.admin.user.canAnnoyUser.description"><![CDATA[Mitglieder dieser Gruppe kÃ¶nnen einzelne Benutzer als unbeliebt markieren.]]></item>
 	</category>
 </language>
