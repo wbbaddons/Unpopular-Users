@@ -22,6 +22,7 @@ class AnnoyUserListener implements EventListener {
 		if (HTTP_ENABLE_GZIP && HTTP_GZIP_LEVEL > 0 && HTTP_GZIP_LEVEL < 10 && !defined('HTTP_DISABLE_GZIP')) {
 			// break gzip output
 			echo ' ';
+			ob_start();
 			flush();
 			ob_flush();
 			WCF::getTPL()->display('permissionDenied');
