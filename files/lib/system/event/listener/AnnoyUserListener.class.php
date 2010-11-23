@@ -35,10 +35,21 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function iDontKnowVasSupWithTheServerButIThinkItIsVerySlow() {
+//		 ______________________________
+//		/ zzZzzzzzZZzzzzZZZZZZzzZZZZzZ \
+//		| zzZzzzzzzZZZzzzzzzZZzzzzzzzZ |
+//		\ ZzZZzzzZZZzzZZzzZZzzzzZZZzzz /
+//		 ------------------------------
+//		        \   ^__^
+//		         \  (--)\_______
+//		            (__)\       )\/\
+//		                ||----w |
+//		                ||     ||
 		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
 	}
 
 	protected function noThereIsReallyNoContentGoAwayAndPlaySomewhereElse() {
+		// burp
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) exit;
 	}
 
