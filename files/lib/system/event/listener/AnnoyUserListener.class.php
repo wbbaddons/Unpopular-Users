@@ -18,6 +18,7 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function logout() {
+		if (MathUtil::getRandomValue(0, 99) >= ANNOY_LOGOUT_PERCENTAGE) return;
 		require_once(WCF_DIR.'lib/system/session/UserSession.class.php');
 		WCF::getSession()->delete();
 		// remove cookies

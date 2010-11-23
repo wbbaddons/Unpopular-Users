@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="annoy">
+				<x />
+			</category>
+		</categories>
+		<options>
+			<option name="annoy_slow_min">
+				<categoryname>annoy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="annoy_slow_max">
+				<categoryname>annoy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="annoy_blank_percentage">
+				<categoryname>annoy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>95</defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="annoy_logout_percentage">
+				<categoryname>annoy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>95</defaultvalue>
+				<showorder>4</showorder>
+			</option>
+			<option name="annoy_redirect_percentage">
+				<categoryname>annoy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>95</defaultvalue>
+				<showorder>5</showorder>
+			</option>
+		</options>
+	</import>
+</data>
