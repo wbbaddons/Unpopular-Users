@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.userprofilesetannoy"><![CDATA[Unbeliebter Benutzer setzen]]></item>
+		<item name="wcf.user.profile.userprofiledeleteannoy"><![CDATA[Unbeliebter Benutzer aufheben]]></item>
+	</category>
+</language>
