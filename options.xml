@@ -22,19 +22,25 @@
 			<option name="annoy_blank_percentage">
 				<categoryname>annoy</categoryname>
 				<optiontype>integer</optiontype>
-				<defaultvalue>95</defaultvalue>
+				<defaultvalue>35</defaultvalue>
 				<showorder>3</showorder>
 			</option>
 			<option name="annoy_logout_percentage">
 				<categoryname>annoy</categoryname>
 				<optiontype>integer</optiontype>
-				<defaultvalue>95</defaultvalue>
+				<defaultvalue>15</defaultvalue>
 				<showorder>4</showorder>
 			</option>
 			<option name="annoy_redirect_percentage">
 				<categoryname>annoy</categoryname>
 				<optiontype>integer</optiontype>
-				<defaultvalue>95</defaultvalue>
+				<defaultvalue>45</defaultvalue>
+				<showorder>5</showorder>
+			</option>
+			<option name="annoy_gzip_percentage">
+				<categoryname>annoy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>20</defaultvalue>
 				<showorder>5</showorder>
 			</option>
 		</options>
