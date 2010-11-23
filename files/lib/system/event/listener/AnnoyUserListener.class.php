@@ -10,7 +10,7 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class AnnoyUserListener implements EventListener {
-	public static $whatDo = array('thizShitDoesNotReallyLookLikeHTMLButItIs', 'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 'iLiekTehIndexPage', 'tihzTimeILiekU', 'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut');
+	public static $whatDo = array('thizShitDoesNotReallyLookLikeHTMLButItIs', 'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 'iLiekTehIndexPage', 'tihzTimeILiekU', 'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOutNoob');
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoyThisUser) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
@@ -30,7 +30,7 @@ class AnnoyUserListener implements EventListener {
 		}
 	}
 
-	protected function iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOut() {
+	protected function iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOutNoob() {
 		if (MathUtil::getRandomValue(0, 99) >= ANNOY_LOGOUT_PERCENTAGE) return;
 		require_once(WCF_DIR.'lib/system/session/UserSession.class.php');
 		WCF::getSession()->delete();
