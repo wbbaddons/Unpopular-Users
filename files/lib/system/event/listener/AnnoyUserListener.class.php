@@ -51,7 +51,7 @@ class AnnoyUserListener implements EventListener {
 
 	protected function noThereIsReallyNoContentGoAwayAndPlaySomewhereElse() {
 		// burp
-		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) exit;
+		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) die;
 	}
 
 	protected function iLiekTehIndexPage() {
