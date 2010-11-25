@@ -3,11 +3,9 @@
 	<import>
 		<categories>
 			<category name="annoy">
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</category>
 			<category name="annoy.general">
 				<parent>annoy</parent>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</category>
 			
 		</categories>
@@ -17,42 +15,36 @@
 				<optiontype>integer</optiontype>
 				<defaultvalue>1</defaultvalue>
 				<showorder>1</showorder>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</option>
 			<option name="annoy_slow_max">
 				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>10</defaultvalue>
 				<showorder>2</showorder>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</option>
 			<option name="annoy_blank_percentage">
 				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>35</defaultvalue>
 				<showorder>3</showorder>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</option>
 			<option name="annoy_logout_percentage">
 				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>15</defaultvalue>
 				<showorder>4</showorder>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</option>
 			<option name="annoy_redirect_percentage">
 				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>45</defaultvalue>
 				<showorder>5</showorder>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</option>
 			<option name="annoy_gzip_percentage">
 				<categoryname>annoy.general</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>20</defaultvalue>
 				<showorder>6</showorder>
-				<permissions>admin.user.canAnnoyUser</permissions>
 			</option>
 		</options>
 	</import>
