@@ -13,9 +13,9 @@
 		<item name="wcf.acp.option.category.annoy.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.category.annoy.general"><![CDATA[Allgemeine Einstellungen]]></item>
 		<item name="wcf.acp.option.category.annoy.general.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.annoy_slow_min"><![CDATA[Minimale Verzögerung "Slow motion"]]></item>
+		<item name="wcf.acp.option.annoy_slow_min"><![CDATA[Min. Verzögerung "Slow motion"]]></item>
 		<item name="wcf.acp.option.annoy_slow_min.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.annoy_slow_max"><![CDATA[Maximale Verzögerung "Slow motion"]]></item>
+		<item name="wcf.acp.option.annoy_slow_max"><![CDATA[Max. Verzögerung "Slow motion"]]></item>
 		<item name="wcf.acp.option.annoy_slow_max.description"><![CDATA[Die Funktion "Slow Motion" verlängert die Ladezeit der Seiten für den betroffenen User. Angabe in Sekunden, 0 = deaktiviert.]]></item>
 		<item name="wcf.acp.option.annoy_blank_percentage"><![CDATA[Funktion "Snow Storm"]]></item>
 		<item name="wcf.acp.option.annoy_blank_percentage.description"><![CDATA[Die Funktion "Snow Storm" zeigt dem User eine weiße Seite. Angabe "Auftreten in Prozent", 0 = deaktiviert.]]></item>
