@@ -2,9 +2,12 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/options.xsd">
 	<import>
 		<categories>
-			<category name="annoy" />
+			<category name="annoy">
+				<permissions>admin.user.canAnnoyUser</permissions>
+			</category>
 			<category name="annoy.general">
 				<parent>annoy</parent>
+				<permissions>admin.user.canAnnoyUser</permissions>
 			</category>
 			
 		</categories>
