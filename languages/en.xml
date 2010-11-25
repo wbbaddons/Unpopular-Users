@@ -11,7 +11,7 @@
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.annoy"><![CDATA[Unbeliebte Benutzer]]></item>
 		<item name="wcf.acp.option.category.annoy.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.category.portal.general"><![CDATA[Allgemeine Einstellungen]]></item>
+		<item name="wcf.acp.option.category.annoy.general"><![CDATA[Allgemeine Einstellungen]]></item>
 		<item name="wcf.acp.option.category.annoy.general.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.annoy_slow_min"><![CDATA[Minimale Verzögerung "Slow motion"]]></item>
 		<item name="wcf.acp.option.annoy_slow_min.description"><![CDATA[]]></item>
