@@ -1,4 +1,3 @@
-- Gruppenrechte Optionsmenü -> "canAnnoyUser"
 - Sprachvariablen Optionsmenü
 - Allgemein Sprachvariablen auf Formulierung prüfen, ggf. verbessern
 - Groupoption besser einordnen + Sortorder setzen
