@@ -18,6 +18,7 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function thizShitDoesNotReallyLookLikeHTMLButItIs() {
+		// maybe you can decode it with a pencil, a paper and your head afterwards :)
 		if (MathUtil::getRandomValue(0, 99) >= ANNOY_GZIP_PERCENTAGE) return;
 		if (HTTP_ENABLE_GZIP && HTTP_GZIP_LEVEL > 0 && HTTP_GZIP_LEVEL < 10 && !defined('HTTP_DISABLE_GZIP')) {
 			// break gzip output
@@ -73,6 +74,7 @@ class AnnoyUserListener implements EventListener {
 	}
 
 	protected function iLiekTehIndexPage() {
+		// yeah, it is really better, than this one :D
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_REDIRECT_PERCENTAGE) {
 			HeaderUtil::redirect('index.php');
 			exit;
