@@ -24,6 +24,6 @@
 		<item name="wcf.acp.option.annoy_redirect_percentage"><![CDATA[Funktion "The Link is broken, dude!"]]></item>
 		<item name="wcf.acp.option.annoy_redirect_percentage.description"><![CDATA[Die Funktion "The Link is broken, dude!" befördert den User Schnurstracks auf die Startseite. Angabe "Auftreten in Prozent", 0 = deaktiviert.]]></item>
 		<item name="wcf.acp.option.annoy_gzip_percentage"><![CDATA[Funktion "Holy crap!"]]></item>
-		<item name="wcf.acp.option.annoy_gzip_percentage.description"><![CDATA[Die Funktion "Holy Crap!" zeigt dem User die Aufgerufene Seite in wilden "Hieroglyphen" an. Angabe "Auftreten in Prozent", 0 = deaktiviert.]></item>
+		<item name="wcf.acp.option.annoy_gzip_percentage.description"><![CDATA[Die Funktion "Holy Crap!" zeigt dem User die Aufgerufene Seite in wilden "Hieroglyphen" an. Angabe "Auftreten in Prozent", 0 = deaktiviert.]]></item>
 	</category>
 </language>
