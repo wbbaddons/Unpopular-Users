@@ -4,10 +4,10 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
 /**
  * Annoy them :D
  *
- * @author Tim Düsterhus
- * @copyright 2010 Tim Düsterhus
- * @package timwolla.wcf.annoy
- * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
+ * @author 	Tim Düsterhus
+ * @copyright 	2010 Tim Düsterhus
+ * @package 	timwolla.wcf.annoy
+ * @license 	LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class AnnoyUserListener implements EventListener {
 	public static $whatDo = array(
