@@ -24,6 +24,6 @@
 		<item name="wcf.acp.option.annoy_redirect_percentage"><![CDATA[Function "The Link is broken, dude!"]]></item>
 		<item name="wcf.acp.option.annoy_redirect_percentage.description"><![CDATA[The function "The Link is broken, dude!" guides the user directly back to the index page. "Frequency in percent", 0 = deactivated.]]></item>
 		<item name="wcf.acp.option.annoy_gzip_percentage"><![CDATA[Function "Holy Crap!"]]></item>
-		<item name="wcf.acp.option.annoy_gzip_percentage.description"><![CDATA[The function "Holy Crap!" shows the user requested pages in hilarious Hieroglyphs. "Frequency in percent", 0 = deactivated.]></item>
+		<item name="wcf.acp.option.annoy_gzip_percentage.description"><![CDATA[The function "Holy Crap!" shows the user requested pages in hilarious Hieroglyphs. "Frequency in percent", 0 = deactivated.]]></item>
 	</category>
 </language>
