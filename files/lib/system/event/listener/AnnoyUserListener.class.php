@@ -10,7 +10,14 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @license LGPL <http://www.gnu.org/licenses/lgpl.html>
  */
 class AnnoyUserListener implements EventListener {
-	public static $whatDo = array('thizShitDoesNotReallyLookLikeHTMLButItIs', 'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 'iLiekTehIndexPage', 'tihzTimeILiekU', 'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOutNoob');
+	public static $whatDo = array(
+		'thizShitDoesNotReallyLookLikeHTMLButItIs', 
+		'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 
+		'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 
+		'iLiekTehIndexPage', 
+		'tihzTimeILiekU', 
+		'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOutNoob'
+	);
 	public function execute($eventObj, $className, $eventName) {
 		if (!WCF::getUser()->annoyThisUser) return;
 		$do = self::$whatDo[array_rand(self::$whatDo)];
