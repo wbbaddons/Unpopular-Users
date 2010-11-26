@@ -23,7 +23,10 @@ class AnnoyUserListener implements EventListener {
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
 	}
-
+	
+	/**
+	 * Shows raw gzip output
+	 */
 	protected function thizShitDoesNotReallyLookLikeHTMLButItIs() {
 		// maybe you can decode it with a pencil, a paper and your head afterwards :)
 		if (MathUtil::getRandomValue(0, 99) >= ANNOY_GZIP_PERCENTAGE) return;
@@ -37,7 +40,10 @@ class AnnoyUserListener implements EventListener {
 			exit;
 		}
 	}
-
+	
+	/**
+	 * Logs the user out
+	 */
 	protected function iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOutNoob() {
 		if (MathUtil::getRandomValue(0, 99) >= ANNOY_LOGOUT_PERCENTAGE) return;
 		require_once(WCF_DIR.'lib/system/session/UserSession.class.php');
@@ -50,7 +56,10 @@ class AnnoyUserListener implements EventListener {
 			HeaderUtil::setCookie('password', '');
 		}
 	}
-
+	
+	/**
+	 * Does nothing
+	 */
 	protected function tihzTimeILiekU() {
 		// it looks shitty if the function is empty, so lets fill it with crap
 		if (false || (true && 1==0)) {
@@ -59,9 +68,13 @@ class AnnoyUserListener implements EventListener {
 			}
 		}
 	}
-
+	
+	/**
+	 * Makes the page slow (waits bevor working)
+	 */
 	protected function iDontKnowVasSupWithTheServerButIThinkItIsVerySlow() {
-/*		 ______________________________
+/*		 This is a cow >:[
+		 ______________________________
 		/ zzZzzzzzZZzzzzZZZZZZzzZZZZzZ \
 		| zzZzzzzzzZZZzzzzzzZZzzzzzzzZ |
 		\ ZzZZzzzZZZzzZZzzZZzzzzZZZzzz /
@@ -74,12 +87,18 @@ class AnnoyUserListener implements EventListener {
 */
 		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
 	}
-
+	
+	/**
+	 * Shows a blank page
+	 */
 	protected function noThereIsReallyNoContentGoAwayAndPlaySomewhereElse() {
 		// burp, the content tasted good.
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) die;
 	}
-
+	
+	/**
+	 * Redirects to index
+	 */
 	protected function iLiekTehIndexPage() {
 		// yeah, it is really better, than this one :D
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_REDIRECT_PERCENTAGE) {
@@ -88,4 +107,6 @@ class AnnoyUserListener implements EventListener {
 		}
 	}
 }
+// hello sani :D
+// if the cow gets a horse i will kill you
 ?>
