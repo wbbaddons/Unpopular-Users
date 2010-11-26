@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/system/session/Session.class.php');
  * 
  * @author	Martin Schwendowius (Sani9000)
  * @copyright	2010 WoltLab Community
- * @license	GNU Lesser General Public License <http://www.gnu.org/licenses/lgpl.html>
+ * @license 	Creative Commons Attribution-NoDerivs 3.0 Unported License <http://creativecommons.org/licenses/by-nd/3.0/>
  * @package	timwolla.wcf.annoy
  */
 class UserProfileDeleteAnnoyAction extends AbstractSecureAction {

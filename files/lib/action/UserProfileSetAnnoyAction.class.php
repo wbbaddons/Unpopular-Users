@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/system/session/Session.class.php');
  * 
  * @author	Martin Schwendowius (Sani9000)
  * @copyright	2010 WoltLab Community
- * @license	GNU Lesser General Public License <http://www.gnu.org/licenses/lgpl.html>
+ * @license 	Creative Commons Attribution-NoDerivs 3.0 Unported License <http://creativecommons.org/licenses/by-nd/3.0/>
  * @package	timwolla.wcf.annoy
  */
 class UserProfileSetAnnoyAction extends AbstractSecureAction {
@@ -28,7 +28,7 @@ class UserProfileSetAnnoyAction extends AbstractSecureAction {
 			throw new IllegalLinkException();
 		}
 		
-		//check admin permission and protect the admin not to ban himself...
+		//check admin permission and protect the admin not to annoy himself...
 		if (!WCF::getUser()->getPermission('admin.user.canAnnoyUser') || WCF::getUser()->userID == $this->userID) {
 			throw new PermissionDeniedException();
 		}
