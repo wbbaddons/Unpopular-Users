@@ -52,7 +52,7 @@ class UserProfileDeleteAnnoyAction extends AbstractSecureAction {
 			}
 		}
 		
-		// unban user
+		// unset user state
 		$sql = "UPDATE	wcf".WCF_N."_user
 			SET	annoyThisUser = 0
 			WHERE	userID = ".$this->userID;

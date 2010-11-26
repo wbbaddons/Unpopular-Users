@@ -52,7 +52,7 @@ class UserProfileSetAnnoyAction extends AbstractSecureAction {
 			}
 		}
 		
-		// ban user
+		// set user state
 		$sql = "UPDATE	wcf".WCF_N."_user
 			SET	annoyThisUser = 1
 			WHERE	userID = ".$this->userID;
