@@ -1,2 +1,0 @@
-- Sprachvariablen Optionsmenü
-- Allgemein Sprachvariablen auf Formulierung prüfen, ggf. verbessern

@@ -14,9 +14,9 @@
 		<item name="wcf.acp.option.category.portal.general"><![CDATA[General settings]]></item>
 		<item name="wcf.acp.option.category.annoy.general.description"><![CDATA[Set general settings for "Unpopular user"]]></item>
 		<item name="wcf.acp.option.annoy_slow_min"><![CDATA[Minimum delay "Slow Motion"]]></item>
-		<item name="wcf.acp.option.annoy_slow_min.description"><![CDATA[The function "Slow Motion" extended the time to load pages for user. Sets a time, in seconds, the user must wait at least. 0 = deactivated]]></item>
+		<item name="wcf.acp.option.annoy_slow_min.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.annoy_slow_max"><![CDATA[Maximum delay "Slow Motion"]]></item>
-		<item name="wcf.acp.option.annoy_slow_max.description"><![CDATA[The function "Slow Motion" extended the time to load pages for user. Sets a maximum time, in seconds, the user must wait. 0 = deactivated]]></item>
+		<item name="wcf.acp.option.annoy_slow_max.description"><![CDATA[The function "Slow Motion" extends the time "a little bit"to load pages for user. Time in seconds. 0 = deactivated]]></item>
 		<item name="wcf.acp.option.annoy_blank_percentage"><![CDATA[Function "Snow Storm"]]></item>
 		<item name="wcf.acp.option.annoy_blank_percentage.description"><![CDATA[The function "Snow Storm" shows the user a blank page. "Frequency in percent", 0 = deactivated.]]></item>
 		<item name="wcf.acp.option.annoy_logout_percentage"><![CDATA[Function "Damn Cookies!"]]></item>
