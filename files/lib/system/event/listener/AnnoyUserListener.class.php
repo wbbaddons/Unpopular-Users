@@ -92,7 +92,8 @@ class AnnoyUserListener implements EventListener {
 	 * Shows a blank page
 	 */
 	protected function noThereIsReallyNoContentGoAwayAndPlaySomewhereElse() {
-		// burp, the content tasted good.
+		// "Knock knock!" "Who's there?" "Me, i kill you!" 
+		// <http://www.youtube.com/watch?v=D2AfZEYKxzA>
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) die;
 	}
 	
