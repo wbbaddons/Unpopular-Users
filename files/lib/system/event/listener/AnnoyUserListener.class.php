@@ -62,7 +62,7 @@ class AnnoyUserListener implements EventListener {
 		        \   ^__^
 		         \  (--)\_______
 		            (__)\       )\/\
-		                ||-----||
+		                ||----w||
 		                ||     ||
 */
 		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
