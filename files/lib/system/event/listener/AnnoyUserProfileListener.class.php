@@ -6,8 +6,8 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * provides an option to annoy a user in his profile :P
  * 
  * @author	Martin Schwendowius (Sani9000)
- * @copyright	2010 Woltlab Community
- * @license	GNU Lesser General Public License <http://www.gnu.org/licenses/lgpl.html>
+ * @copyright	2010 wbb3addons.de
+  * @license 	Creative Commons Attribution-NoDerivs 3.0 Unported License <http://creativecommons.org/licenses/by-nd/3.0/>
  * @package	timwolla.wcf.annoy
  */
 class AnnoyUserProfileListener implements EventListener {
