@@ -5,42 +5,42 @@ require_once(WCF_DIR.'lib/data/user/group/Group.class.php');
 require_once(WCF_DIR.'lib/system/session/Session.class.php');
 
 /**
- * deletes the annoy state from the user 
- * 
+ * deletes the annoy state from the user
+ *
  * @author	Martin Schwendowius (Sani9000)
- * @copyright	2010 WoltLab Community
+ * @copyright	2010 - 2011 wbb3addons.de
  * @license 	Creative Commons Attribution-NoDerivs 3.0 Unported License <http://creativecommons.org/licenses/by-nd/3.0/>
  * @package	timwolla.wcf.annoy
  */
 class UserProfileDeleteAnnoyAction extends AbstractSecureAction {
 	protected $userID;
-	
+
 	/**
 	 * @see AbstractSecureAction::readParameters()
 	 */
 	public function readParameters() {
 		parent::readParameters();
-		
+
 		//get userID
-		if (isset($_REQUEST['userID'])) { 
+		if (isset($_REQUEST['userID'])) {
 			$this->userID = intval($_REQUEST['userID']);
 		} else {
 			throw new IllegalLinkException();
 		}
-		
+
 		//check admin permission
 		if (!WCF::getUser()->getPermission('admin.user.canAnnoyUser')) {
 			throw new PermissionDeniedException();
 		}
-		
+
 	}
-	
+
 	/**
 	 * @see AbstractAction::execute()
 	 */
 	public function execute() {
 		parent::execute();
-		
+
 		// check accessible group permissions
 		$sql = "SELECT	DISTINCT groupID
 			FROM	wcf".WCF_N."_user_to_groups
@@ -51,18 +51,18 @@ class UserProfileDeleteAnnoyAction extends AbstractSecureAction {
 				throw new PermissionDeniedException();
 			}
 		}
-		
+
 		// unset user state
 		$sql = "UPDATE	wcf".WCF_N."_user
 			SET	annoyThisUser = 0
 			WHERE	userID = ".$this->userID;
 		WCF::getDB()->sendQuery($sql);
-	
+
 		// reset session of the user
 		Session::resetSessions($this->userID);
 
 		$this->executed();
-		
+
 		// redirect to user page
 		HeaderUtil::redirect('index.php?page=User&userID='.$this->userID.SID_ARG_2ND_NOT_ENCODED);
 		exit;

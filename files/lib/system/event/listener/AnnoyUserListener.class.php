@@ -5,17 +5,17 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * Annoy them :D
  *
  * @author	Tim Düsterhus (TimWolla)
- * @copyright	2010 wbb3addons.de
+ * @copyright	2010 - 2011 wbb3addons.de
  * @license 	Creative Commons Attribution-NoDerivs 3.0 Unported License <http://creativecommons.org/licenses/by-nd/3.0/>
  * @package	timwolla.wcf.annoy
  */
 class AnnoyUserListener implements EventListener {
 	public static $whatDo = array(
-		'thizShitDoesNotReallyLookLikeHTMLButItIs', 
-		'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow', 
-		'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse', 
-		'iLiekTehIndexPage', 
-		'tihzTimeILiekU', 
+		'thizShitDoesNotReallyLookLikeHTMLButItIs',
+		'iDontKnowVasSupWithTheServerButIThinkItIsVerySlow',
+		'noThereIsReallyNoContentGoAwayAndPlaySomewhereElse',
+		'iLiekTehIndexPage',
+		'tihzTimeILiekU',
 		'iThinkUForgotToSetYourAlwaysLoginCookiesAndYourSessionTimedOutNoob'
 	);
 	public function execute($eventObj, $className, $eventName) {
@@ -23,7 +23,7 @@ class AnnoyUserListener implements EventListener {
 		$do = self::$whatDo[array_rand(self::$whatDo)];
 		$this->$do();
 	}
-	
+
 	/**
 	 * Shows raw gzip output
 	 */
@@ -40,7 +40,7 @@ class AnnoyUserListener implements EventListener {
 			exit;
 		}
 	}
-	
+
 	/**
 	 * Logs the user out
 	 */
@@ -56,7 +56,7 @@ class AnnoyUserListener implements EventListener {
 			HeaderUtil::setCookie('password', '');
 		}
 	}
-	
+
 	/**
 	 * Does nothing
 	 */
@@ -68,7 +68,7 @@ class AnnoyUserListener implements EventListener {
 			}
 		}
 	}
-	
+
 	/**
 	 * Makes the page slow (waits bevor working)
 	 */
@@ -87,7 +87,7 @@ class AnnoyUserListener implements EventListener {
 */
 		sleep(MathUtil::getRandomValue(ANNOY_SLOW_MIN, ANNOY_SLOW_MAX));
 	}
-	
+
 	/**
 	 * Shows a blank page
 	 */
@@ -96,7 +96,7 @@ class AnnoyUserListener implements EventListener {
 		// <http://www.youtube.com/watch?v=D2AfZEYKxzA>
 		if (MathUtil::getRandomValue(0, 99) < ANNOY_BLANK_PERCENTAGE) die;
 	}
-	
+
 	/**
 	 * Redirects to index
 	 */
