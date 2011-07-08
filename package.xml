@@ -9,8 +9,8 @@
 		<packagedescription language="de-informal"><![CDATA[Das Paket beschert "unbeliebten Nutzern" zufällig ausgewählte Fehler.]]></packagedescription>
 		<standalone>0</standalone>
 		<isunique>1</isunique>
-		<version>1.0.0 RC 1</version> <!-- Codename "THE UGLY" -->
-		<date>2010-11-26</date>
+		<version>1.0.0</version> <!-- Codename "THE UGLY" -->
+		<date>2011-07-08</date>
 		<plugin>com.woltlab.wcf</plugin>
 	</packageinformation>
 	
@@ -33,6 +33,16 @@
 		<languages languagecode="en">languages/en.xml</languages>
 		<script>acp/uglyInstall.php</script>
 		<sql>install.sql</sql>
+		<templates>templates.tar</templates>
+		<options>options.xml</options>
+	</instructions>
+	<instructions type="update" fromversion="*">
+		<eventlistener>eventlistener.xml</eventlistener>
+		<files>files.tar</files>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<languages languagecode="de">languages/de.xml</languages>
+		<languages languagecode="de-informal">languages/de-informal.xml</languages>
+		<languages languagecode="en">languages/en.xml</languages>
 		<templates>templates.tar</templates>
 		<options>options.xml</options>
 	</instructions>
